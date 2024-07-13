@@ -8,11 +8,28 @@ import { Contact } from "@/features/contact/contact";
 export default function Home() {
   return (
     <div>
-      <div id="menu-header" className="menu-header">
-        <div className="mx-3">
+      <header id="menu-header" className="menu-header">
+        <div id="header-title" className="mx-3 w-1/4">
           <h1>KHのポートフォリオ</h1>
         </div>
-      </div>
+        <div
+          id="header-menu-item"
+          className="space-x-10 mx-3 w-3/4 flex justify-end"
+        >
+          <a href="#activity-pickup" className="text-white">
+            Activity Pickup
+          </a>
+          <a href="#my-skills" className="text-white">
+            My Skills
+          </a>
+          <a href="#about-me" className="text-white">
+            About Me
+          </a>
+          <a href="#contact" className="text-white">
+            Contact
+          </a>
+        </div>
+      </header>
       <div
         id="home-img"
         className="relative max-h-100 overflow-hidden bg-green-100"
