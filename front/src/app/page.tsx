@@ -26,7 +26,9 @@ export default function Home() {
           id="home-img-text"
           className="absolute top-0 left-0 w-full h-full flex justify-center items-center"
         >
-          <h1 className="text-5xl text-white">Welcome to our site</h1>
+          <h1 className="text-5xl p-8 text-white">
+            KHのポートフォリオサイトへようこそ！！
+          </h1>
         </div>
       </div>
       <div id="main" className="h-auto flex flex-col justify-center">
