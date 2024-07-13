@@ -2,7 +2,7 @@ import { SectionTitle } from "@/components/header/sectionTitle";
 
 export const ActivityPickup = () => {
   return (
-    <div id="activity-pickup" className="container m-8">
+    <div id="activity-pickup" className="w-full p-8 bg-orange-100">
       <SectionTitle text="Activity Pickup" />
       <div className="text-center">
         <p>

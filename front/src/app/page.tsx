@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <div id="menu-header" className="menu-header">
-        <div className=" mx-3">
+        <div className="mx-3">
           <h1>KHのポートフォリオ</h1>
         </div>
       </div>
@@ -17,7 +17,7 @@ export default function Home() {
         <Image
           src={homeImage}
           alt="home"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover mx-0"
         />
         <div
           id="home-img-text"
@@ -26,7 +26,7 @@ export default function Home() {
           <h1 className="text-5xl text-white">Welcome to our site</h1>
         </div>
       </div>
-      <div id="main" className="h-100">
+      <div id="main" className="h-100 flex justify-center">
         <ActivityPickup />
       </div>
       <div id="footer">フッタがここに入ります</div>
