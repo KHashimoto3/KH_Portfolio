@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .menu-header {
+    @apply fixed top-0 left-0 w-full h-16 flex items-center bg-opacity-20 bg-black text-white z-50;
+  }
+}
