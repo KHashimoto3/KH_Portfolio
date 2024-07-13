@@ -1,6 +1,9 @@
 import Image from "next/image";
 import homeImage from "../../public/home-img.jpg";
 import { ActivityPickup } from "@/features/activity-pickup/activityPickup";
+import { MySkills } from "@/features/skills/mySkills";
+import { AboutMe } from "@/features/about-me/aboutMe";
+import { Contact } from "@/features/contact/contact";
 
 export default function Home() {
   return (
@@ -26,8 +29,11 @@ export default function Home() {
           <h1 className="text-5xl text-white">Welcome to our site</h1>
         </div>
       </div>
-      <div id="main" className="h-100 flex justify-center">
+      <div id="main" className="h-auto flex flex-col justify-center">
         <ActivityPickup />
+        <MySkills />
+        <AboutMe />
+        <Contact />
       </div>
       <div id="footer">フッタがここに入ります</div>
     </div>
