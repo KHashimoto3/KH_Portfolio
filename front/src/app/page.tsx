@@ -1,5 +1,6 @@
 import Image from "next/image";
 import homeImage from "../../public/home-img.jpg";
+import { ActivityPickup } from "@/features/activity-pickup/activityPickup";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         </div>
       </div>
       <div id="main" className="h-100">
-        メインのコンテンツがここに入ります
+        <ActivityPickup />
       </div>
       <div id="footer">フッタがここに入ります</div>
     </div>
