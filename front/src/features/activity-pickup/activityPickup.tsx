@@ -1,7 +1,9 @@
+import { SectionTitle } from "@/components/header/sectionTitle";
+
 export const ActivityPickup = () => {
   return (
     <div id="activity-pickup" className="container m-8 flex">
-      <h1>活動内容ピックアップ</h1>
+      <SectionTitle text="Activity Pickup" />
     </div>
   );
 };
