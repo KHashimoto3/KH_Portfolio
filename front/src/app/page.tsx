@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <header id="menu-header" className="menu-header">
-        <div id="header-title" className="mx-3 w-1/4">
+        <div id="header-title" className="mx-3 w-1/4 font-bold">
           <h1>KHのポートフォリオ</h1>
         </div>
         <div
