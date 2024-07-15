@@ -2,12 +2,9 @@ import { SectionTitle } from "@/components/header/sectionTitle";
 
 export const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="w-full p-8 bg-gradient-to-r from-red-600 to-red-800"
-    >
+    <div id="contact" className="w-full p-8 bg-white0">
       <SectionTitle text="Contact" />
-      <div className="text-center text-white">
+      <div className="text-center">
         <p>ご連絡はこちらまでお願いします。</p>
       </div>
     </div>

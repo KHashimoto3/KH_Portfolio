@@ -16,18 +16,10 @@ export default function Home() {
           id="header-menu-item"
           className="space-x-10 mx-3 w-3/4 flex justify-end"
         >
-          <a href="#activity-pickup" className="text-white">
-            Activity Pickup
-          </a>
-          <a href="#my-skills" className="text-white">
-            My Skills
-          </a>
-          <a href="#about-me" className="text-white">
-            About Me
-          </a>
-          <a href="#contact" className="text-white">
-            Contact
-          </a>
+          <a href="#activity-pickup">Activity Pickup</a>
+          <a href="#my-skills">My Skills</a>
+          <a href="#about-me">About Me</a>
+          <a href="#contact">Contact</a>
         </div>
       </header>
       <div
