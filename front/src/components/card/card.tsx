@@ -1,5 +1,6 @@
 import Image from "next/image";
 import cardImage from "../../../public/home-img.jpg";
+import { Button } from "../button/button";
 
 export const Card = () => {
   return (
@@ -22,8 +23,11 @@ export const Card = () => {
           説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
         </p>
       </div>
-      <div id="card-button" className="w-full h-1/6">
-        ここにテキストが入ります。
+      <div
+        id="card-button"
+        className="w-full h-1/6 p-3 flex justify-end items-center"
+      >
+        <Button text="詳しく見る" />
       </div>
     </div>
   );
