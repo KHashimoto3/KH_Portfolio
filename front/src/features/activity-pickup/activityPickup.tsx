@@ -1,3 +1,4 @@
+import { Card } from "@/components/card/card";
 import { SectionTitle } from "@/components/header/sectionTitle";
 
 export const ActivityPickup = () => {
@@ -8,6 +9,7 @@ export const ActivityPickup = () => {
         <p>
           私の取り組んでいる活動のうち、特にみていただきたい内容をピックアップしています。
         </p>
+        <Card />
       </div>
     </div>
   );
