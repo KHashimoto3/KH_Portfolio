@@ -4,6 +4,7 @@ import Image from "next/image";
 import Programming from "../../../public/skill-img/programming.png";
 import MovieEdit from "../../../public/skill-img/movie-edit.png";
 import Other from "../../../public/skill-img/other.png";
+import { MoreButton } from "@/components/button/moreButton";
 
 export const MySkills = () => {
   return (
@@ -22,6 +23,9 @@ export const MySkills = () => {
             <div>
               <p>プログラミングは高校以来ずっと行ってきています。</p>
             </div>
+            <div>
+              <MoreButton text="詳しく見る" />
+            </div>
           </div>
           <div className="flex flex-col mx-8 gap-3 justify-center items-center">
             <div>
@@ -32,6 +36,9 @@ export const MySkills = () => {
             </div>
             <div>
               <p>中学校の時から、いろいろな動画を作ってきました。</p>
+            </div>
+            <div>
+              <MoreButton text="詳しく見る" />
             </div>
           </div>
         </div>
