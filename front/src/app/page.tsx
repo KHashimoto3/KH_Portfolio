@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <header id="menu-header" className="menu-header">
         <div id="header-title" className="mx-3 w-1/4 font-bold">
-          <h1>KHのポートフォリオ</h1>
+          <h1>B.Bのポートフォリオ</h1>
         </div>
         <div
           id="header-menu-item"
@@ -36,7 +36,7 @@ export default function Home() {
           className="absolute top-0 left-0 w-full h-full flex justify-center items-center"
         >
           <h1 className="text-5xl p-8 text-white">
-            KHのポートフォリオサイトへようこそ！！
+            B.Bのポートフォリオサイトへようこそ！！
           </h1>
         </div>
       </div>

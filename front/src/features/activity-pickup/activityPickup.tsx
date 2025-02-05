@@ -10,8 +10,16 @@ export const ActivityPickup = () => {
           私の取り組んでいる活動のうち、特にみていただきたい内容をピックアップしています。
         </p>
         <div className="mt-8 w-full flex justify-center items-center gap-x-8">
-          <Card />
-          <Card />
+          <Card
+            imgUrl="https://picsum.photos/200"
+            title="活動1"
+            text="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。"
+          />
+          <Card
+            imgUrl="https://picsum.photos/200"
+            title="活動2"
+            text="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。"
+          />
         </div>
       </div>
     </div>

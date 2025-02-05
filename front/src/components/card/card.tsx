@@ -2,12 +2,19 @@ import Image from "next/image";
 import cardImage from "../../../public/home-img.jpg";
 import { Button } from "../button/button";
 
-export const Card = () => {
+type Props = {
+  imgUrl: string;
+  title: string;
+  text: string;
+};
+
+export const Card = (props: Props) => {
+  const { imgUrl, title, text } = props;
   return (
     <div className="w-72 h-96 drop-shadow-lg rounded-lg bg-white">
       <div id="card-img" className="w-full h-3/6 rounded-t-lg bg-stone-300">
-        <Image
-          src={cardImage}
+        <img
+          src={imgUrl}
           alt="card"
           className="w-full h-full object-cover rounded-t-lg"
         />
@@ -16,12 +23,10 @@ export const Card = () => {
         id="card-title"
         className="w-full h-1/6 flex justify-center items-center"
       >
-        <p className="text-sky-700 text-xl font-bold">学園祭ホームページ制作</p>
+        <p className="text-sky-700 text-xl font-bold">{title}</p>
       </div>
       <div id="card-text" className="w-full h-1/6 text-left px-2">
-        <p className="text-sm">
-          説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
-        </p>
+        <p className="text-sm">{text}</p>
       </div>
       <div
         id="card-button"
