@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import homeImage from "../../public/home-img.jpg";
 import { ActivityPickup } from "@/features/activity-pickup/activityPickup";
@@ -9,7 +11,11 @@ export default function Home() {
   return (
     <div>
       <header id="menu-header" className="menu-header">
-        <div id="header-title" className="mx-3 w-1/4 font-bold">
+        <div
+          id="header-title"
+          className="mx-3 w-1/4 font-bold cursor-pointer"
+          onClick={() => (window.location.href = "/")}
+        >
           <h1>B.Bのポートフォリオ</h1>
         </div>
         <div
