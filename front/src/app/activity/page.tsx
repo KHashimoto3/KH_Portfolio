@@ -1,5 +1,7 @@
 "use client";
 
+import { FaSearch } from "react-icons/fa";
+
 import { ActivityLandscapeCard } from "@/components/card/activity-landscape-card";
 import { SectionTitle } from "@/components/header/sectionTitle";
 
@@ -25,7 +27,7 @@ export default function ActivityPage() {
         </div>
       </header>
       <div id="activity" className="w-full p-8 bg-white">
-        <div className="flex items-center justify-center w-full h-60">
+        <div className="flex items-center justify-center w-full h-40">
           <SectionTitle text="Activity" />
         </div>
         <div className="text-center m-5">
@@ -33,6 +35,7 @@ export default function ActivityPage() {
         </div>
         <div className="w-full m-auto p-3 flex h-10 drop-shadow-lg rounded-lg bg-white">
           <div className="w-1/5 h-full flex justify-center items-center">
+            <FaSearch />
             <p>絞り込み</p>
           </div>
           <div className="w-4/5 h-full flex justify-left items-center gap-4">
@@ -66,10 +69,20 @@ export default function ActivityPage() {
             </label>
           </div>
         </div>
-        <div className="mt-8 w-full flex justify-center items-center gap-x-8">
+        <div className="mt-8 w-full flex justify-center items-center gap-8 flex-wrap">
           <ActivityLandscapeCard
             imgUrl="https://picsum.photos/200"
             title="活動1"
+            text="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。"
+          />
+          <ActivityLandscapeCard
+            imgUrl="https://picsum.photos/200"
+            title="活動2"
+            text="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。"
+          />
+          <ActivityLandscapeCard
+            imgUrl="https://picsum.photos/200"
+            title="活動2"
             text="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。"
           />
           <ActivityLandscapeCard
