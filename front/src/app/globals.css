@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@plugin "daisyui";
+
 @layer components {
   .menu-header {
     @apply fixed top-0 left-0 w-full h-16 flex items-center bg-opacity-80 bg-white z-50;
