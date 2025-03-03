@@ -4,7 +4,7 @@ import aboutMeImg from "../../../public/about-me-img.jpg";
 
 export const AboutMe = () => {
   return (
-    <div id="about-me" className="w-full p-8 bg-white">
+    <div id="about-me" className="w-full p-8 bg-white dark:bg-gray-900">
       <SectionTitle text="About Me" />
       <div className="flex flex-row mx-8">
         <div className="basis-1/2 p-5">

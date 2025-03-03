@@ -11,7 +11,7 @@ type Props = {
 export const Card = (props: Props) => {
   const { imgUrl, title, text } = props;
   return (
-    <div className="w-72 h-96 drop-shadow-lg rounded-lg bg-white">
+    <div className="w-72 h-96 drop-shadow-lg rounded-lg bg-white dark:bg-gray-800">
       <div id="card-img" className="w-full h-3/6 rounded-t-lg bg-stone-300">
         <img
           src={imgUrl}
@@ -23,7 +23,9 @@ export const Card = (props: Props) => {
         id="card-title"
         className="w-full h-1/6 flex justify-center items-center"
       >
-        <p className="text-sky-700 text-xl font-bold">{title}</p>
+        <p className="text-sky-700 dark:text-white text-xl font-bold">
+          {title}
+        </p>
       </div>
       <div id="card-text" className="w-full h-1/6 text-left px-2">
         <p className="text-sm">{text}</p>
