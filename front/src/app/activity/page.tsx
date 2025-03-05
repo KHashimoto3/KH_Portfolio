@@ -5,30 +5,14 @@ import { FaSearch } from "react-icons/fa";
 import { ActivityLandscapeCard } from "@/components/card/activity-landscape-card";
 import { SectionTitle } from "@/components/header/sectionTitle";
 import { useState } from "react";
+import { PageHeader } from "@/components/header/pageHeader";
 
 export default function ActivityPage() {
   const [hitCount, setHitCount] = useState(4);
 
   return (
     <>
-      <header id="menu-header" className="menu-header dark:bg-gray-900">
-        <div
-          id="header-title"
-          className="mx-3 w-1/4 font-bold cursor-pointer"
-          onClick={() => (window.location.href = "/")}
-        >
-          <h1>B.Bのポートフォリオ</h1>
-        </div>
-        <div
-          id="header-menu-item"
-          className="space-x-10 mx-3 w-3/4 flex justify-end"
-        >
-          <a href="#activity-pickup">Activity Pickup</a>
-          <a href="#my-skills">My Skills</a>
-          <a href="#about-me">About Me</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </header>
+      <PageHeader />
       <div id="activity" className="w-full p-8 bg-white dark:bg-gray-900">
         <div className="flex items-center justify-center w-full h-40">
           <SectionTitle text="Activity" />

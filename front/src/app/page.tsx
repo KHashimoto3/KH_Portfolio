@@ -8,28 +8,12 @@ import { ActivityPickup } from "@/features/activity-pickup/activityPickup";
 import { MySkills } from "@/features/skills/mySkills";
 import { AboutMe } from "@/features/about-me/aboutMe";
 import { Contact } from "@/features/contact/contact";
+import { PageHeader } from "@/components/header/pageHeader";
 
 export default function Home() {
   return (
     <div>
-      <header id="menu-header" className="menu-header dark:bg-gray-900">
-        <div
-          id="header-title"
-          className="mx-3 w-1/4 font-bold cursor-pointer"
-          onClick={() => (window.location.href = "/")}
-        >
-          <h1>B.Bのポートフォリオ</h1>
-        </div>
-        <div
-          id="header-menu-item"
-          className="space-x-10 mx-3 w-3/4 flex justify-end"
-        >
-          <a href="#activity-pickup">Activity Pickup</a>
-          <a href="#my-skills">My Skills</a>
-          <a href="#about-me">About Me</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </header>
+      <PageHeader />
       <div
         id="home-img"
         className="relative max-h-100 overflow-hidden bg-green-100"
