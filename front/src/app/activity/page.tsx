@@ -4,8 +4,11 @@ import { FaSearch } from "react-icons/fa";
 
 import { ActivityLandscapeCard } from "@/components/card/activity-landscape-card";
 import { SectionTitle } from "@/components/header/sectionTitle";
+import { useState } from "react";
 
 export default function ActivityPage() {
+  const [hitCount, setHitCount] = useState(4);
+
   return (
     <>
       <header id="menu-header" className="menu-header dark:bg-gray-900">
@@ -70,7 +73,7 @@ export default function ActivityPage() {
           </div>
         </div>
         <div className="text-center text-lg m-5">
-          <p>ヒット件数 X 件</p>
+          <p>ヒット件数 {hitCount} 件</p>
         </div>
         <div className="mt-8 w-full flex justify-center items-center gap-8 flex-wrap">
           <ActivityLandscapeCard
