@@ -1,7 +1,7 @@
 import { Card } from "@/components/card/card";
 import { SectionTitle } from "@/components/header/sectionTitle";
 
-import { FaArrowRight } from "react-icons/fa";
+import { AiOutlineSwapRight } from "react-icons/ai";
 
 export const ActivityPickup = () => {
   return (
@@ -29,8 +29,8 @@ export const ActivityPickup = () => {
           className="text-3xl flex items-center cursor-pointer text-blue-500"
           onClick={() => (window.location.href = "/activity")}
         >
-          <FaArrowRight />
-          <span className="ml-2">全てのActivityを見る</span>
+          <AiOutlineSwapRight />
+          <span className="ml-2">View More..</span>
         </div>
       </div>
     </div>
