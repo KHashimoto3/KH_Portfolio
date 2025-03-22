@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const PageHeader = () => {
   return (
     <header id="menu-header" className="menu-header dark:bg-gray-900">
@@ -12,10 +14,10 @@ export const PageHeader = () => {
         id="header-menu-item"
         className="space-x-10 mx-3 w-3/4 flex justify-end"
       >
-        <a href="#activity-pickup">Activity Pickup</a>
-        <a href="#my-skills">My Skills</a>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
+        <Link href={"/activity"}>Activity</Link>
+        <Link href={"/skills"}>My Skills</Link>
+        <Link href={"/about-me"}>About Me</Link>
+        <Link href={"/contact"}>Contact</Link>
       </div>
     </header>
   );
