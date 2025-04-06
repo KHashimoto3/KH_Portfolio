@@ -10,26 +10,22 @@ import { ActivityDetailItem } from "./activityDetailItem";
 
 export const ActivityDetail = () => {
   //項目名と項目の詳細を格納するオブジェクト配列
-  const activityDetail = [
+  const activityDetail: ActivityDetail[] = [
     {
       title: "活動名",
       text: "活動の内容",
-      imgUrl: "https://picsum.photos/200",
+      imgUrl: ["https://picsum.photos/200"],
+      imgAlt: ["活動の画像"],
+      link: ["https://www.google.com/"],
+      linkText: ["サンプルリンク（google）"],
     },
     {
-      title: "活動の目的",
+      title: "活動名",
       text: "活動の内容",
-      imgUrl: "https://picsum.photos/200",
-    },
-    {
-      title: "活動の内容",
-      text: "活動の内容",
-      imgUrl: "https://picsum.photos/200",
-    },
-    {
-      title: "活動の成果物",
-      text: "活動の内容",
-      imgUrl: "https://picsum.photos/200g",
+      imgUrl: ["https://picsum.photos/200"],
+      imgAlt: ["活動の画像"],
+      link: ["https://www.google.com/"],
+      linkText: ["サンプルリンク（google）"],
     },
   ];
 
@@ -41,6 +37,9 @@ export const ActivityDetail = () => {
           title={item.title}
           text={item.text}
           imgUrl={item.imgUrl}
+          imgAlt={item.imgAlt}
+          link={item.link}
+          linkText={item.linkText}
         />
       ))}
     </>
