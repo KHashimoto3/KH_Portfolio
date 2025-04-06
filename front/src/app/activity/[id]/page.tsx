@@ -14,12 +14,6 @@ export default function Page() {
         <div className="flex items-center justify-center w-full h-40">
           <h1 className="text-center text-5xl">Activityのタイトルが入る</h1>
         </div>
-        <div
-          id="activity-main"
-          className="w-9/12 text-left m-auto bg-slate-400"
-        >
-          <p>このページのパスパラメータidの値は、{params.id}です。</p>
-        </div>
         <div className="w-9/12 m-auto h-auto">
           <ActivityDetail />
         </div>

@@ -6,49 +6,43 @@ import ReactMarkdown from "react-markdown";
 import breaks from "remark-breaks";
 import remarkGfm from "remark-gfm";
 import "github-markdown-css/github-markdown.css";
+import { ActivityDetailItem } from "./activityDetailItem";
 
 export const ActivityDetail = () => {
-  const markdownSource = `
-# これは見出し1
-
-## これは見出し2
-
-### これは見出し3
-
-* リストアイテム2  
-* リストアイテム3  
-
-\`\`\`js
-console.log('Hello, Markdown!');
-\`\`\`
-
-[Google](https://www.google.com)
-
-**これは太字**
-
-*これは斜体*
-
-> これは引用
-
-| 名前  | 年齢 |
-|------|------|
-| 太郎  | 20   |
-| 花子  | 22   |
-`;
+  //項目名と項目の詳細を格納するオブジェクト配列
+  const activityDetail = [
+    {
+      title: "活動名",
+      text: "活動の内容",
+      imgUrl: "https://picsum.photos/200",
+    },
+    {
+      title: "活動の目的",
+      text: "活動の内容",
+      imgUrl: "https://picsum.photos/200",
+    },
+    {
+      title: "活動の内容",
+      text: "活動の内容",
+      imgUrl: "https://picsum.photos/200",
+    },
+    {
+      title: "活動の成果物",
+      text: "活動の内容",
+      imgUrl: "https://picsum.photos/200g",
+    },
+  ];
 
   return (
     <>
-      <h1>活動の詳細</h1>
-      <div className="w-full">
-        <div
-          className="markdown-body p-4 border border-gray-300 h-72 overflow-y-auto list-disc list-decimal"
-          style={{ fontFamily: "inherit", fontSize: "inherit" }}
-        >
-          <ReactMarkdown remarkPlugins={[remarkGfm, breaks]}>
-            {markdownSource}
-          </ReactMarkdown>
-        </div>
-      </div>
+      {activityDetail.map((item, index) => (
+        <ActivityDetailItem
+          key={index}
+          title={item.title}
+          text={item.text}
+          imgUrl={item.imgUrl}
+        />
+      ))}
     </>
   );
 };
