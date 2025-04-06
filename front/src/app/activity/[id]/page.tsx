@@ -1,12 +1,9 @@
 "use client";
 
 import { PageHeader } from "@/components/header/pageHeader";
-import { SectionTitle } from "@/components/header/sectionTitle";
 import { ActivityDetail } from "@/features/activity-detail/activityDetail";
-import { useParams } from "next/navigation";
 
 export default function Page() {
-  const params = useParams();
   return (
     <>
       <PageHeader />

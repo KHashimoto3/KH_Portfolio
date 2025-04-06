@@ -1,5 +1,3 @@
-import Image from "next/image";
-import cardImage from "../../../public/home-img.jpg";
 import { Button } from "../button/button";
 
 type Props = {
