@@ -1,10 +1,6 @@
 "use client";
 
 import React from "react";
-
-import ReactMarkdown from "react-markdown";
-import breaks from "remark-breaks";
-import remarkGfm from "remark-gfm";
 import "github-markdown-css/github-markdown.css";
 import { ActivityDetailItem } from "./activityDetailItem";
 
