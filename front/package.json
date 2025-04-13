@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
     "@uiw/react-md-editor": "^4.0.5",
     "easymde": "^2.20.0",
     "github-markdown-css": "^5.8.1",
